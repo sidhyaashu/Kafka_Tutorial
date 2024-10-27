@@ -4,4 +4,4 @@
 
 For example, suppose we have a cluster containing three brokers say Broker 1, Broker 2, and Broker 3. A topic, namely Topic-X is split into Partition 0 and Partition 1 with a replication factor of 2.
 
-![replication](images/replication.png)
+![replication](../images/replication.png)
