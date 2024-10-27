@@ -41,9 +41,11 @@ There are two ways to know that the data is sent with or without a key:
 ## Let's see an example
 
 1. Consider a scenario where a producer writes data to the Kafka cluster, and the data is written without specifying the key. So, the data gets distributed among each partition of Topic-T under each broker, i.e., Broker 1, Broker2, and Broker 3.
+
 ![one](../images/one.png)
 
 2. Consider another scenario where a producer specifies a key as Prod_id. So, data of Prod_id_1(say) will always be sent to partition 0 under Broker 1, and data of Prod_id_2 will always be in partition 1 under Broker 2. Thus, the data will not be distributed to each partition after applying the key (as saw in the above scenario).
+
 ![two](../images/two.png)
 
 
@@ -82,4 +84,5 @@ Suppose, a producer writes data to Broker1, Broker 2, and Broker 3.
 ![case2](../images/c2.png)
 
 3. Case3: The producers send data to each broker. Now, the leader and its replica/ISR will ask their respective brokers about the data. Finally, acknowledge the producer with the feedback.
+
 ![case3](../images/c3.png)
