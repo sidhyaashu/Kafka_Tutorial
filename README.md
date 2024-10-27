@@ -12,6 +12,8 @@ A streaming process is the processing of data in parallelly connected systems. T
 
 Apache Kafka provides a set of core APIs that make it a powerful platform for real-time data streaming, processing, and integration across applications and systems. This document provides an overview of each core API and how they are used within Kafka.
 
+![Core API's](images/image.png)
+
 ---
 
 ## Table of Contents
